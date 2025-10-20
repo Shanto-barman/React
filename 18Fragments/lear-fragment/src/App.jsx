@@ -1,5 +1,5 @@
-import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
+import React from "react";
 import "./App.css";
 
 function App() {
@@ -7,8 +7,10 @@ function App() {
   return (
     <React.Fragment>
       <h1>Healthy Food</h1>
-      <ul class="list-group">
-        {foodItems.map(item =><li class="list-group-item">{item}</li>)}
+      {foodItems.length === 0 && <>I am still hungry</>}
+      <ul className="list-group">
+        {foodItems.map((item) =>(
+          <li key={item} className="list-group-item">{item}</li>))}
       </ul>
     </React.Fragment>
   );
