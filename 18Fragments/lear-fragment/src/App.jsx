@@ -8,7 +8,7 @@ function App() {
     let foodItems = ["dal", "Green vegetable", "Roti", "Salad", "Milk"];
   return (
     <React.Fragment>
-      <h1>Healthy Food</h1>
+      <h1 className="nav-bar">Healthy Food</h1>
       <FoodItems items={foodItems}></FoodItems>
       <ErrorMessages items={foodItems}></ErrorMessages>
     </React.Fragment>
