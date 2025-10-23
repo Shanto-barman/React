@@ -1,17 +1,24 @@
 import FoodItems from "./components/FoodItems";
 import ErrorMessages from "./components/ErrorMessages";
 import "bootstrap/dist/css/bootstrap.min.css";
-import React from "react";
 import "./App.css";
+import Container from "./components/container";
+
+
 
 function App() {
-    let foodItems = ["dal", "Green vegetable", "Roti", "Salad", "Milk"];
+  let foodItems = ["dal", "Green vegetable", "Roti", "Salad", "Milk"];
   return (
-    <React.Fragment>
+    <>
+    <Container>
       <h1 className="nav-bar">Healthy Food</h1>
       <FoodItems items={foodItems}></FoodItems>
       <ErrorMessages items={foodItems}></ErrorMessages>
-    </React.Fragment>
+    </Container>
+    <Container>
+  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident magni quia reiciendis consectetur eum voluptatibus recusandae.</p>
+    </Container>
+    </>
   );
 }
 
